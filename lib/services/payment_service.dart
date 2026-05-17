@@ -12,8 +12,6 @@ class PaymentService {
       'Authorization': 'Bearer $token',
     };
   }
-
-  /// Ambil semua pembayaran
   static Future<List<PaymentModel>> getPayments({
     int page = 1,
     int limit = 10,

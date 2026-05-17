@@ -168,7 +168,6 @@ class _PaymentListScreenState extends State<PaymentListScreen> {
               const SizedBox(height: 4),
               Text('Rp ${_fmtPrice(p.amount!)}', style: const TextStyle(fontWeight: FontWeight.w600, color: Color(0xFF1A1A2E), fontSize: 16)),
             ],
-            // Admin verify actions
             if (_role == 'admin' && p.status == 'pending') ...[
               const SizedBox(height: 10),
               Wrap(spacing: 8, children: [

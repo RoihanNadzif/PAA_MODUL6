@@ -114,7 +114,6 @@ class AuthService {
       final accessToken = data['accessToken'] as String;
       final refreshToken = data['refreshToken'] as String;
 
-      // Simpan token
       await saveTokens(
         accessToken: accessToken,
         refreshToken: refreshToken,

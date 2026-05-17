@@ -46,11 +46,9 @@ class CarService {
       final data = body['data'];
       final List<dynamic> carsJson = data['cars'] ?? [];
       final cars = carsJson.map((json) => CarModel.fromJson(json)).toList();
-      // final pagination = data['pagination'];
 
       return {
         'cars': cars,
-        // 'pagination': pagination,
       };
     } else {
       throw Exception(body['message'] ?? 'Gagal mengambil data mobil');

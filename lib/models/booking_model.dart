@@ -36,7 +36,6 @@ class BookingModel {
   });
 
   factory BookingModel.fromJson(Map<String, dynamic> json) {
-    // Handle car field - bisa berupa String (ID) atau Object
     String? carId;
     String? carName;
     if (json['car'] is Map) {
@@ -46,7 +45,6 @@ class BookingModel {
       carId = json['car'] as String;
     }
 
-    // Handle user field - bisa berupa String (ID) atau Object
     String? userId;
     String? userName;
     if (json['user'] is Map) {

@@ -38,7 +38,6 @@ class PaymentModel {
   });
 
   factory PaymentModel.fromJson(Map<String, dynamic> json) {
-    // Handle booking field
     String? bookingId;
     String? bookingCode;
     if (json['booking'] is Map) {
@@ -47,8 +46,6 @@ class PaymentModel {
     } else if (json['booking'] is String) {
       bookingId = json['booking'] as String;
     }
-
-    // Handle user field
     String? userId;
     String? userName;
     if (json['user'] is Map) {
